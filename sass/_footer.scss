@@ -2,4 +2,41 @@
   background-color: $color-secondary;
   grid-row: -2 / -1;
   grid-column: full-start / full-end;
+  padding: 8rem;
+
+}
+
+.nav{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+
+  &__link{
+    &:link, &:visited{
+      font-size: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-family: $font-display;
+      text-transform: uppercase;
+      padding: 1.5rem;
+      display: block;
+      transition: all .2s;
+      &:hover, &:active{
+        background-color: rgba(#fff, 0.05);
+        transform: translateY(-1rem);
+      }
+    }
+  }
+}
+
+.copyright{
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  text-align: center;
+  margin: 6rem auto;
+  margin-bottom: 0;
+  width: 70%;
+
 }
